@@ -6,8 +6,8 @@ impl Plugin for GamePlugin {
     fn build(&self, app: &mut App) {
         app
             .add_systems(Startup, setup)
-            .add_systems(Startup, load_maze)
-            .add_systems(Update, print_maze_info);
+            .add_systems(Startup, load_maze);
+            //.add_systems(Update, print_maze_info);
     }
 }
 
